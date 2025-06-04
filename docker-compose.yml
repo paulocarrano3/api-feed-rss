@@ -1,0 +1,11 @@
+services:
+  api-bbc:
+    ports:
+      - ${PORT}:80
+    expose:
+      - 80
+    build: .
+    volumes:
+      - ./src:/api/src
+    env_file:
+      - .env

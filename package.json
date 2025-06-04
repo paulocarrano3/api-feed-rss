@@ -1,0 +1,26 @@
+{
+  "name": "sprint2",
+  "version": "1.0.0",
+  "description": "API para as sprints 2 e 3",
+  "main": "router.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -L --watch . --exec npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.741.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "rss-parser": "^3.13.0"
+  },
+  "nodemonConfig":
+  {
+    "ignore": ["*/Utilities/api-url.js"]
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
